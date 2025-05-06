@@ -9,13 +9,21 @@ const MainScreen = () => {
   return (
     <div className="main-screen">
       <div className="main-screen-wrapper">
-        <TopMenu />
+        {/* <TopMenu /> */}
 
         <Section id="top">
           <div className="main-screen-top-content">
             <img src={logo} alt="Company Logo" className="main-screen-logo" />
-            <p className="main-screen-subtitle">ECU Repair Experts</p>
+
+            <p className="main-screen-top-text">
+              Servicio a domicilio de reparaciones electronicas de automovil
+            </p>
+
             <ButtonGrid />
+
+            <p className="main-screen-bottom-text">
+              ¡Contáctanos! <br></br>600 06 56 74
+            </p>
           </div>
         </Section>
 

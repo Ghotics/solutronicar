@@ -1,43 +1,59 @@
 .main-screen {
-    background-color: black;
-    color: white;
-    width: 100%;
+  background-color: black;
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+
+  &-wrapper {
+    width: 375px;
+    max-width: 100%;
     min-height: 100vh;
-    overflow-x: hidden;
     display: flex;
-    justify-content: center;
-  
-    &-wrapper {
-      width: 375px; // typical mobile width like iPhone X
-      max-width: 100%;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-  
-    &-top-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      width: 100%;
-    }
-  
-    &-logo {
-      width: 75%;
-      max-width: 16rem;
-      margin-bottom: 1rem;
-    }
-  
-    &-subtitle {
-      font-size: 0.875rem;
-      color: #a3a3a3;
-      margin-bottom: 2rem;
-    }
-  
-    &-placeholder {
-      color: #6b7280;
-    }
+    flex-direction: column;
   }
-  
+
+  &-top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+    padding-top: 2rem;
+  }
+
+  &-logo {
+    width: 90%;
+    max-width: 210px;
+    margin-top: 1rem;
+    margin-bottom: 3.5rem;
+  }
+
+  &-top-text {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #8bc741;
+    margin: 1.25rem 1rem;
+    line-height: 1.5;
+    text-shadow: 0 0 6px #01b1d6;
+  }
+
+  &-bottom-text {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #8bc741;
+    margin: 1.25rem 1rem;
+    line-height: 1.5;
+    text-shadow: 0 0 6px #01b1d6;
+  }
+
+  &-placeholder {
+    color: #6b7280;
+    text-align: center;
+    padding: 2rem;
+  }
+}
